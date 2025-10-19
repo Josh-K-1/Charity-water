@@ -26,7 +26,8 @@ main, .site-footer { max-width: var(--max-width); margin: 0 auto; padding: var(-
 */
 .hero{
   position: relative; /* needed for overlay */
-  background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=60');
+  /* use the provided PNG from the user's VSCode chat export - place it at img/hero.png */
+  background-image: url('img/hero.png');
   background-size: cover;
   background-position: center;
   color: white;
@@ -84,4 +85,9 @@ main, .site-footer { max-width: var(--max-width); margin: 0 auto; padding: var(-
   .story-image{ max-height:220px; }
   .donation .btn-accent{ display:block; width:100%; box-sizing:border-box; }
   .impact-content{ flex-direction:column; }
+}
+
+@media (max-width: 420px){
+  .hero-headline{ font-size:1.35rem; margin-left:8px; }
+  .hero-blurb{ position: static; margin:18px 16px 0 16px; width: calc(100% - 32px); bottom:auto; left:auto; }
 }
